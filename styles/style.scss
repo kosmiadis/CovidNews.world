@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import "layout/header.scss";
+@import "layout/news.scss";
 
 body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    div.news-container {
+        flex: 1;
+    }
+
+    header {
+        
+    }
 }

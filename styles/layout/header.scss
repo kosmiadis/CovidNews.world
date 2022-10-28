@@ -1,13 +1,34 @@
+@keyframes shake {
+    0% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% { 
+        transform: scale(1);
+    }
+
+}
+
 header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d1cbcb46;
-    box-shadow: 0px 0px 10px grey;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px grey;
     
+    & div.newsletter {
+        display: none;
+
+    }
     & div.grid {
-        height: 100%;
         margin: 0;
         display: flex;
         align-items: center;
@@ -31,9 +52,79 @@ header {
             &:nth-of-type(2) {
                 display: none;
             }
-
         }
-
-
     }
 }
+
+@media screen and (min-width: 481px) {
+    header {
+        padding: 20px 20px;
+        & div.grid {
+
+            & img {
+                width: 80px;
+            }
+
+            & p {
+
+                &:nth-of-type(1) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    header {
+        justify-content: start;
+        
+        & div.grid {
+
+            & img {
+                width: 100px;
+            }
+
+            & p {
+
+                &:nth-of-type(1) {
+                    font-size: 1.75rem;
+                }
+
+                &:nth-of-type(2) {
+                    display: block;
+                    width: max-content;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    header {
+        justify-content: space-between;
+
+        & div.newsletter {
+            display: block;
+            padding-right: 20px;
+
+            & p {
+                color: black;
+                font-size: 1.4rem;
+                font-weight: 600;
+
+                &:hover {
+                    cursor: pointer;
+                    animation: shake 0.35s;
+                    animation-delay: 0.2s;
+                }
+            }
+
+            
+
+            
+        }
+    }
+}
+
