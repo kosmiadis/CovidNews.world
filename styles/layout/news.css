@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 div.news-container {
+  font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 div.news-container div.title {
@@ -29,9 +30,7 @@ div.news-container div.news {
 }
 
 div.news-container div.news div.new {
-  width: 90%;
   align-self: center;
-  padding: 2rem 5rem;
 }
 
 div.news-container div.news div.new img {

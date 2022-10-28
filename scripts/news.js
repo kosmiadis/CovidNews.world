@@ -34,7 +34,6 @@ let covidNews = {
                         <p class="publ-date">Published ${n.pubDate.slice(0,10)}</p>
                         <img src=${n.urlToImage}>
                         <p class="new-title">${n.title}</p>
-                        <p class="content">${n.content}</p>
                     </div>
                 `     
             }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 @keyframes shake {
   0% {
     transform: scale(1.05);
@@ -13,8 +14,6 @@
 
 header {
   z-index: 2;
-  position: sticky;
-  top: 0;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -104,14 +103,14 @@ header div.grid p:nth-of-type(2) {
 }
 
 div.news-container {
+  font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 div.news-container div.title {
@@ -134,9 +133,7 @@ div.news-container div.news {
 }
 
 div.news-container div.news div.new {
-  width: 90%;
   align-self: center;
-  padding: 2rem 5rem;
 }
 
 div.news-container div.news div.new img {
