@@ -49,6 +49,7 @@ div.news-container div.news div.new .publ-date {
 div.news-container div.news div.new .new-title {
   text-align: left;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 div.news-container .clickable {
