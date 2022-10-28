@@ -28,7 +28,7 @@ div.news-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        gap: 3rem;
         & div.new {
             align-self: center;
             & img {
@@ -37,7 +37,18 @@ div.news-container {
 
             & .publ-date {
                 text-align: right;
+                margin: 5px 0;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 0.8rem;
             }
+
+            & .new-title {
+                text-align: left;
+                font-size: 1.2rem;
+            }
+
+
         }
     }
 
@@ -81,6 +92,11 @@ div.news-container {
             & .news-title {
                 font-size: 1.7rem;
             }
+        }
+
+        & div.new {
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-flow: dense;
         }
     }
 }

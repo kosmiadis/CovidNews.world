@@ -130,6 +130,7 @@ div.news-container div.news {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
 }
 
 div.news-container div.news div.new {
@@ -142,6 +143,15 @@ div.news-container div.news div.new img {
 
 div.news-container div.news div.new .publ-date {
   text-align: right;
+  margin: 5px 0;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+div.news-container div.news div.new .new-title {
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 div.news-container .clickable {
@@ -171,6 +181,10 @@ div.news-container .clickable:hover {
 @media screen and (min-width: 1120px) {
   div.news-container div.title .news-title {
     font-size: 1.7rem;
+  }
+  div.news-container div.new {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
   }
 }
 

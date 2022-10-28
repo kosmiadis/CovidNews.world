@@ -13,7 +13,7 @@ let covidNews = {
     
 
     fetchNews: function () {
-        fetch('https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-coronavirus-news/0', this.options)
+        fetch(`https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-coronavirus-news/${Math.round(Math.random() * 15)}`, this.options)
         .then(response => response.json())
         .then(response => {
             this.displayNews(response)
@@ -31,7 +31,7 @@ let covidNews = {
                 document.querySelector('.news').innerHTML += 
                 `
                     <div class='new clickable'>
-                        <p class="publ-date">Published ${n.pubDate.slice(0,10)}</p>
+                        <p class="publ-date">Published ${n.imageFileName.slice(4,15)}</p>
                         <img src=${n.urlToImage}>
                         <p class="new-title">${n.title}</p>
                     </div>
