@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 div.news-container {
   font-family: 'Roboto', sans-serif;
-  margin-top: 20px;
+  margin-block: 30px;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,7 @@ div.news-container div.news div.new .publ-date {
 }
 
 div.news-container div.news div.new .new-title {
+  margin-top: 1rem;
   text-align: left;
   font-size: 1.3rem;
   font-weight: 600;
